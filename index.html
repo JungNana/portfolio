@@ -3,45 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Anastasiia Kazhan — UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Anastasiia Kazhan, UI/UX designer: web, game UI and graphic design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Anastasia</h1>
-    <p class="tagline">Welcome to my portfolio.</p>
+
+  <nav class="nav">
+    <a href="#top" class="logo">AK</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#web">Web</a>
+      <a href="#games">Game UI</a>
+      <a href="#banners">Graphics</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <p class="eyebrow">UI/UX Designer</p>
+    <h1>Hi, I'm Anastasiia.<br>I design interfaces that feel <em>logical</em> and look <em>good</em>.</h1>
+    <p class="lead">Web, mobile and game UI, with four years of graphic design behind it. Open to new projects and full-time roles.</p>
+    <a href="#web" class="btn">See my work ↓</a>
   </header>
 
   <main>
-    <section id="about">
+
+    <section id="about" class="about">
       <h2>About</h2>
-      <p>A short introduction goes here.</p>
+      <div class="about-grid">
+        <div>
+          <p>I'm a UI/UX designer with over four years of experience in graphic design. As a freelancer I've worked on dozens of projects: from visual materials for social media and presentations to full-scale UI/UX design, including user flows, wireframes, competitor analysis and UI kit development.</p>
+          <p>I've worked with clients such as Fancy Pack, Art Gang Division, Dzhmili Foundation, Proxima Research International, Toxic Studio and others. My experience also includes PC game interfaces, advertising materials, video content for TikTok and Instagram, packaging and promotional products.</p>
+          <p>I combine my art education with modern UX research methods. Studying at Prjctr and Mobios School expanded my knowledge of web, mobile and product design and strengthened my ability to build logical, visually appealing and functional interfaces.</p>
+        </div>
+        <ul class="facts">
+          <li><strong>Strengths</strong>Attention to detail, systematic thinking, clear communication of design decisions</li>
+          <li><strong>Education</strong>Art education · Prjctr · Mobios School</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul class="projects">
-        <li>
-          <h3>Project One</h3>
-          <p>One or two sentences about what it is and what you did.</p>
-        </li>
-        <li>
-          <h3>Project Two</h3>
-          <p>One or two sentences about what it is and what you did.</p>
-        </li>
-      </ul>
+    <!-- ===================== WEB ===================== -->
+    <section id="web">
+      <h2>Web design</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Crypto exchange — landing page</h3>
+          <p>Hero section for a crypto trading app in three colour themes. Each version keeps the same layout and swaps the palette and the phone screen (Swap, Wallet, Statistics).</p>
+        </div>
+        <div class="gallery cols-3">
+          <a href="images/crypto-lavender.jpg"><img src="images/crypto-lavender.jpg" alt="Crypto exchange landing, lavender theme" loading="lazy"></a>
+          <a href="images/crypto-sage.jpg"><img src="images/crypto-sage.jpg" alt="Crypto exchange landing, sage theme" loading="lazy"></a>
+          <a href="images/crypto-dark.jpg"><img src="images/crypto-dark.jpg" alt="Crypto exchange landing, dark theme" loading="lazy"></a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Long-read pages &amp; case study</h3>
+          <p>Three full-length pages. The Asian food delivery case covers website and mobile app: typography, colour system, onboarding, navigation map and all screens. Click any preview to scroll through the whole page.</p>
+          <a class="text-link" href="files/asia-food-delivery-case.pdf" target="_blank" rel="noopener">Open the food delivery case as PDF ↗</a>
+        </div>
+        <div class="gallery cols-3">
+          <a href="images/asia-food.jpg" class="tall"><img src="images/asia-food-thumb.jpg" alt="Asian food delivery case study" loading="lazy"></a>
+          <a href="images/hanboost.jpg" class="tall"><img src="images/hanboost-thumb.jpg" alt="Hanboost product landing page" loading="lazy"></a>
+          <a href="images/bts.jpg" class="tall"><img src="images/bts-thumb.jpg" alt="BTS fan website" loading="lazy"></a>
+        </div>
+        <div class="captions cols-3">
+          <p><strong>Asian food delivery</strong> — full case study</p>
+          <p><strong>Hanboost</strong> — product landing for a wireless ultrasonic cutter</p>
+          <p><strong>BTS</strong> — long-read fan page about the band's history</p>
+        </div>
+      </article>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        <a href="https://github.com/JungNana">GitHub</a>
+    <!-- ===================== GAMES ===================== -->
+    <section id="games">
+      <h2>Game UI</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Casino simulator — in-game UI</h3>
+          <p>Interface for a PC casino management game: upgrade tree, management tablet, cashier and bar terminals, radial pet menu, character wardrobe and the jackpot win screen.</p>
+        </div>
+        <div class="gallery cols-3">
+          <a href="images/casino-upgrades.jpg" class="wide"><img src="images/casino-upgrades.jpg" alt="Casino simulator upgrade tree" loading="lazy"></a>
+          <a href="images/casino-management.jpg"><img src="images/casino-management.jpg" alt="Casino simulator management tablet" loading="lazy"></a>
+          <a href="images/casino-cashier.jpg"><img src="images/casino-cashier.jpg" alt="Casino simulator cashier desk" loading="lazy"></a>
+          <a href="images/casino-bar.jpg"><img src="images/casino-bar.jpg" alt="Casino simulator bar checkout" loading="lazy"></a>
+          <a href="images/casino-pet-menu.jpg"><img src="images/casino-pet-menu.jpg" alt="Casino simulator radial pet menu" loading="lazy"></a>
+          <a href="images/casino-wardrobe.jpg"><img src="images/casino-wardrobe.jpg" alt="Casino simulator character wardrobe" loading="lazy"></a>
+          <a href="images/casino-jackpot.jpg" class="wide"><img src="images/casino-jackpot.jpg" alt="Casino simulator jackpot win screen" loading="lazy"></a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Put Your Toys Away Together! — menus &amp; icons</h3>
+          <p>Main menu, settings, skill tree and a set of 14 skill icons for a bright co-op game set in a toy shop.</p>
+        </div>
+        <div class="gallery cols-2">
+          <a href="images/toys-menu.jpg"><img src="images/toys-menu.jpg" alt="Toy shop game main menu" loading="lazy"></a>
+          <a href="images/toys-settings.jpg"><img src="images/toys-settings.jpg" alt="Toy shop game settings window" loading="lazy"></a>
+          <a href="images/toys-skill.jpg"><img src="images/toys-skill.jpg" alt="Toy shop game skill tree" loading="lazy"></a>
+          <a href="images/toys-icons.jpg"><img src="images/toys-icons.jpg" alt="Toy shop game skill icon set" loading="lazy"></a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===================== BANNERS ===================== -->
+    <section id="banners">
+      <h2>Graphic design</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Posters &amp; social media banners</h3>
+          <p>Promo graphics for cafés and restaurants: an event poster for DOT Coffee Station, a menu banner for Food Kyiv and a story for Lou Lou Eatery.</p>
+        </div>
+        <div class="gallery banners">
+          <a href="images/banner-dot.jpg"><img src="images/banner-dot.jpg" alt="DOT Coffee Station blueberry weekend poster" loading="lazy"></a>
+          <a href="images/banner-food-kyiv.jpg"><img src="images/banner-food-kyiv.jpg" alt="Food Kyiv menu banner" loading="lazy"></a>
+          <a href="images/banner-loulou.jpg"><img src="images/banner-loulou.jpg" alt="Lou Lou Eatery caviar menu story" loading="lazy"></a>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let's work together</h2>
+      <p>I'm open to full-time and freelance projects. Happy to complete a test assignment or share more work on request.</p>
+      <p class="contact-links">
+        <a href="https://github.com/JungNana" target="_blank" rel="noopener">GitHub</a>
       </p>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2026 Anastasia</p>
+    <p>© 2026 Anastasiia Kazhan</p>
   </footer>
+
+  <!-- Lightbox: opens a full-size image when a gallery item is clicked -->
+  <dialog id="lightbox">
+    <button class="close" aria-label="Close">×</button>
+    <img src="" alt="">
+  </dialog>
+
+  <script src="script.js"></script>
 </body>
 </html>
