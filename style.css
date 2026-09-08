@@ -157,6 +157,7 @@ h2 {
 
 .gallery a {
   display: block;
+  position: relative;
   overflow: hidden;
   border-radius: var(--radius);
   background: var(--surface);
@@ -173,8 +174,16 @@ h2 {
   object-fit: cover;
 }
 
+/* Fixed-ratio tiles. The image is positioned absolutely so its height never
+   depends on percentage resolution (Safari is picky about that). */
 .cols-3 a, .cols-2 a { aspect-ratio: 16 / 9; }
-.gallery a.wide { grid-column: span 2; aspect-ratio: auto; }
+.cols-3 a img, .cols-2 a img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+.gallery a.wide { grid-column: span 2; aspect-ratio: auto; min-height: 100%; }
 
 /* Long pages: show the top part cropped to the same ratio as neighbours */
 .gallery a.tall { aspect-ratio: 16 / 9; }
@@ -214,6 +223,7 @@ footer {
 }
 
 /* ---------- Lightbox ---------- */
+dialog:not([open]) { display: none; }
 #lightbox {
   border: 0;
   padding: 0;
