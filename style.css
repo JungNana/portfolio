@@ -145,6 +145,7 @@ h2 {
 }
 .project-head p { margin: 0; color: var(--muted); }
 .text-link { display: inline-block; margin-top: 0.6rem; font-weight: 700; }
+.project-links { margin: 1rem 0 0; }
 
 /* Galleries */
 .gallery {
